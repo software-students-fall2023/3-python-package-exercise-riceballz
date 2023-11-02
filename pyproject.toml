@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riceinfo"
+description = "A fun package for your rice needs. Print out riceballs, rice puns, rice history, and country's main rice types!"
+version = "0.0.8"
+authors = [
+  { name="Kei Oshima", email="foo.barstein@onepotcooking.com" },
+  { name="Ryan Horng", email="rh3025@nyu.edu"},
+  { name="Andrew Huang", email="ah5360@nyu.edu"}
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["python", "package", "build", "rice", "history", "pun", "ascii"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/software-students-fall2023/3-python-package-exercise-riceballz"
+"Repository" = "https://github.com/software-students-fall2023/3-python-package-exercise-riceballz.git"
+"Bug Tracker" = "https://github.com/software-students-fall2023/3-python-package-exercise-riceballz/issues"
+
+[project.scripts]
+riceinfo = "riceinfo.__main__:main"
