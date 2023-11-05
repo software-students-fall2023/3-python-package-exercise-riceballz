@@ -218,8 +218,3 @@ punsDict = {
     Pun.DAD : dadPuns,
     Pun.RHYME : rhymePuns
 }
-
-
-    
-
->>>>>>> dc749eba12932b13a56bbc62b2aba5d86c43b5d4
