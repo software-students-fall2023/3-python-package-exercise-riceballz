@@ -43,6 +43,30 @@ class riceinfo:
                 return random.choice(punsDict[Pun.RHYME])
             case default:
                 return "not a valid PUN TYPE"
+            
+    def riceCountry(country_name):
+        country_name = country_name.lower()  
+        
+        rice_country = {
+            'brazil': 'Brazillian markets often sell a traditional variety of a short-grain rice called Arborio, which is commonly used for risotto.',
+            'egypt': 'Egypt consumes a variety of different rice, including Japonica, but is most known for Giza 178 rice, a medium-grain variety that is commonly used in traditional Egyptian dishes.',
+            'mexico': 'Mexico often uses a long-grain Patna rice, which is known for its long kernel and grain length.',
+            'nigeria': 'Nigeria primarily uses Ofada rice, which is an indigenous rice that consists mostly of blends containing African rice.',
+            'china': 'China is a major consumer of traditional jasmine rice, though they use many different varieties of short, medium, and long grain rice, depending on the dish.',
+            'thailand': 'Thailand is famous for its fragrant Jasmine rice, which is a long-grain rice variety known for its unique aroma and flavor.',
+            'indonesia': 'Indonesia commonly uses Pandan rice, which is jasmine rice cooked in pandan leaves and is used in dishes like Nasi Goreng.',
+            'japan': 'Japan primarily uses a short grain Koshihikari rice for sushi, sashimi, and traditional Japanese dishes.',
+            'south korea': 'South Korea mainly uses Calrose rice, a medium grain variety which is used for dishes like Bibimbap and Kimbap.'
+        }
+        
+        while country_name not in rice_country:
+            print("Error: Invalid country name. Please choose from the following options:")
+            for option in rice_country:
+                print(option.capitalize())
+            country_name = input("Please enter a valid country name: ").lower()
+        
+        print(rice_country[country_name])
+
     
     def history(century):
         if century == 1:
