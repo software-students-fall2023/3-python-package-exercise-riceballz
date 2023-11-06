@@ -5,7 +5,7 @@ run-name: ${{ github.actor }} is automating using Github Actions
 on: 
   push:
     branches: [main, master]
-  pull-request:
+  pull_request:
     branches: [main, master]
 
 
