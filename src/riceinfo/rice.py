@@ -55,7 +55,7 @@ class riceinfo:
             'china': 'China is a major consumer of traditional jasmine rice, though they use many different varieties of short, medium, and long grain rice, depending on the dish.',
             'thailand': 'Thailand is famous for its fragrant Jasmine rice, which is a long-grain rice variety known for its unique aroma and flavor.',
             'indonesia': 'Indonesia commonly uses Pandan rice, which is jasmine rice cooked in pandan leaves and is used in dishes like Nasi Goreng.',
-            'japan': 'Japan primarily uses a short grain Koshihikari rice for sushi, sashimi, and traditional Japanese dishes.',
+            'japan': 'Japan primarily uses a short grain Koshihikari rice for sushi and other traditional Japanese dishes.',
             'south korea': 'South Korea mainly uses Calrose rice, a medium grain variety which is used for dishes like Bibimbap and Kimbap.'
         }
         
@@ -65,7 +65,7 @@ class riceinfo:
                 print(option.capitalize())
             country_name = input("Please enter a valid country name: ").lower()
         
-        print(rice_country[country_name])
+        return (rice_country[country_name])
 
     
     def history(century):
