@@ -9,7 +9,9 @@ class Pun(Enum):
     
 class riceinfo:
     def print_riceball(emotions):
-        if emotions.lower() == 'happy':
+        if not isinstance(emotions, str):
+            print("please enter a string value only integers are not accepted")
+        elif emotions.lower() == 'happy':
             print(HappyRiceBall)
         elif emotions.lower() == 'sad':
             print(SadRiceBall)
@@ -115,11 +117,11 @@ class riceinfo:
 
 AngryRiceBall =  r'''
          ##
-        /  \
-       /    \
-      /      \
-     /        \
-    /  \    /  \
+        /  \      *********************** 
+       /    \     * I am ANGRY riceball *
+      /      \    ***********************
+     /        \ /
+    /  \    /  \ 
    /    Ò__Ó    \
   /   ________   \          
  /   |########|   \
@@ -130,10 +132,10 @@ AngryRiceBall =  r'''
 HappyRiceBall =  r'''
          ##
         /  \
-       /    \
-      /      \
-     /  _  _  \
-    /   ^  ^   \
+       /    \     ***********************
+      /      \    * I am HAPPY riceball *
+     /  _  _  \   ***********************
+    /   ^  ^   \ /
    /   \____/   \
   /   ________   \          
  /   |########|   \
@@ -144,10 +146,10 @@ SadRiceBall =  r'''
           ##
          /  \
         /    \
-       /      \
-      /        \
-     /   v  v   \
-    /   .----.   \
+       /      \     *********************
+      /        \    * I am SAD riceball *
+     /   v  v   \   *********************
+    /   .----.   \ /
    /   '      '   \
   /    ________    \          
  /    |########|    \
@@ -160,10 +162,10 @@ NervousRiceBall = r'''
          /    \        
         /      \      
        /        \    
-      /  __  __  \ 
-     /   Ô  O     \
-    /      ^       \
-   /     ~~~~~~     \
+      /  __  __  \    *************************
+     /   Ô  O     \   * I am NERVOUS riceball *
+    /      ^       \  *************************
+   /     ~~~~~~     \ /
   /     ________     \          
  /     |########|     \
 /______|########|______\
