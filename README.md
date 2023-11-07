@@ -14,18 +14,19 @@ RiceInfo is a fun little package that returns rice trivia, puns, and pictures of
 - **Countries with Rice**: Input from a specific country list to find out their preferred rice type.
 
 ## Installation
-
+(Note) when testing this on pypitest we had to install with this: pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple riceinfo==0.0.8
 RiceInfo can be installed through the pip command: pip install riceinfo
 
 ## Functions and usage
 
 Create a new python file and install riceinfo. From there, you can import riceinfo's package with the following lines of code:
 ```python
-from riceinfo import rice
+from riceinfo.rice import riceinfo
+from riceinfo.rice import Pun
 ```
 
 
-### Print a riceball: 'print_riceball(emotions)'
+### Print a riceball: `print_riceball(emotions)`
 
 Print out a riceball with a specific emotion.
 
@@ -39,9 +40,9 @@ riceinfo.print_riceball("angry")
 riceinfo.print_riceball("nervous")
 ```
 
-### Tell a Rice Pun: 'tellPun(punType: Pun) -> str'
+### Tell a Rice Pun: `tellPun(punType: Pun) -> str`
 
-Returns a specified type of pun relating to rice. We have specific types of jokes, short length puns, medium length puns, long length puns, dad puns, and rhyme puns.
+Returns a specified type of pun relating to rice. We have specific types of jokes, short length puns, medium length puns, long length puns, dad puns, and rhyme puns. If you want tio use this function please make sure to also import the pun class Which is provided above at Functions and usage
 
 Valid commands are:
 ```python
@@ -55,7 +56,7 @@ pun = riceinfo.tellPun(Pun.RHYME)
 
 This should return the pun to the variable.
 
-### Rice History: 'history(century)'
+### Rice History: `history(century)`
 
 Input a specific century of the common era to have returned a year specific history fact.
 
@@ -72,7 +73,7 @@ history = riceinfo.history(22)
 
 Note that inputting integers that are not within 1 through 21 will return a quip about staying within the range.
 
-### Country's preferred rice: 'riceCountry(country_name)'
+### Country's preferred rice: `riceCountry(country_name)`
 
 Input a country from the list of research countries to have returned a small info card about the rice that country commonly uses and its unique properties.
 
