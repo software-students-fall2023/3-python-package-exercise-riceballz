@@ -20,8 +20,10 @@ RiceInfo can be installed through the pip command: pip install riceinfo
 ## Functions and usage
 
 Create a new python file and install riceinfo. From there, you can import riceinfo's package with the following lines of code:
-
+```python
 from riceinfo import rice
+```
+
 
 ### Print a riceball: 'print_riceball(emotions)'
 
@@ -30,25 +32,26 @@ Print out a riceball with a specific emotion.
 The only emotions currently supported is: Happy, Sad, Angry, Nervous.
 
 Valid commands will look like:
-'''python
+```python
 riceinfo.print_riceball("happy")
 riceinfo.print_riceball("sad")
 riceinfo.print_riceball("angry")
 riceinfo.print_riceball("nervous")
-'''
+```
 
 ### Tell a Rice Pun: 'tellPun(punType: Pun) -> str'
 
 Returns a specified type of pun relating to rice. We have specific types of jokes, short length puns, medium length puns, long length puns, dad puns, and rhyme puns.
 
 Valid commands are:
-'''python
+```python
 pun = riceinfo.tellPun(Pun.SHORT)
 pun = riceinfo.tellPun(Pun.MEDIUM)
 pun = riceinfo.tellPun(Pun.LONG)
 pun = riceinfo.tellPun(Pun.DAD)
 pun = riceinfo.tellPun(Pun.RHYME)
-'''
+```
+
 
 This should return the pun to the variable.
 
@@ -57,13 +60,15 @@ This should return the pun to the variable.
 Input a specific century of the common era to have returned a year specific history fact.
 
 Valid command examples are:
-'''python
+```python
 history = riceinfo.history(1)
 history = riceinfo.history(5)
 history = riceinfo.history(21)
 history = riceinfo.history(0)
 history = riceinfo.history(22)
-'''
+```
+
+
 
 Note that inputting integers that are not within 1 through 21 will return a quip about staying within the range.
 
@@ -74,11 +79,12 @@ Input a country from the list of research countries to have returned a small inf
 The countries that are valid within this package is: Brazil, Egypt, Mexico, Nigeria, China, Thailand, Indonesia, Japan, and South Korea.
 
 A valid command examples would be:
-'''python
-riceType = riceinfo.riceCountry(brazil)
-riceType = riceinfo.riceCountry(Brazil)
-riceType = riceinfo.riceCountry(Mexico)
-'''
+```python
+riceType = riceinfo.riceCountry('brazil')
+riceType = riceinfo.riceCountry('Brazil')
+riceType = riceinfo.riceCountry('Mexico')
+```
+
 
 ### Example File
 We have provided an example file with the methods noted above, [click here](https://github.com/software-students-fall2023/3-python-package-exercise-riceballz/blob/main/src/riceinfo/__main__.py).
