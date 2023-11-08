@@ -16,7 +16,12 @@ RiceInfo is a fun little package that returns rice trivia, puns, and pictures of
 ## Installation
 (Note) when testing this on pypitest we had to install with this: pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple riceinfo==0.1.0
 
-RiceInfo can be installed through the pip command: pip install riceinfo
+RiceInfo can be installed through the pip command: 
+
+```python
+pip install riceinfo
+```
+
 
 ## Functions and usage
 
@@ -102,6 +107,10 @@ git clone ...
 3. Set up your development environment by opening up a terminal in python. If you do not have pipenv installed, run the command "pip install pipenv" to install the package. Once installed, install any package dependencies by running "pipenv install --dev".
 4. Run "pipenv shell" to activate your virtual environment.
 This should allow you to write your code to contribute to the riceinfo package.
+
+### Pypi Link
+
+https://pypi.org/project/riceinfo/0.1.0/ 
 
 ### Other Notes
 
