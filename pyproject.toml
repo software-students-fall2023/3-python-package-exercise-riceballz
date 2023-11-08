@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "riceinfo"
 description = "A fun package for your rice needs. Print out riceballs, rice puns, rice history, and country's main rice types!"
-version = "0.0.8"
+version = "0.0.9"
 authors = [
   { name="Kei Oshima", email="ko2091@nyu.edu" },
   { name="Ryan Horng", email="rh3025@nyu.edu"},
