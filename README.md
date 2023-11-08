@@ -14,7 +14,8 @@ RiceInfo is a fun little package that returns rice trivia, puns, and pictures of
 - **Countries with Rice**: Input from a specific country list to find out their preferred rice type.
 
 ## Installation
-(Note) when testing this on pypitest we had to install with this: pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple riceinfo==0.1.0\
+(Note) when testing this on pypitest we had to install with this: pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple riceinfo==0.1.0
+
 RiceInfo can be installed through the pip command: pip install riceinfo
 
 ## Functions and usage
